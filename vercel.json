@@ -1,0 +1,14 @@
+{
+  "name": "chatgpt-mcp-demo-v3",
+  "functions": {
+    "api/connector_hybrid.py": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/connector_hybrid"
+    }
+  ]
+}
